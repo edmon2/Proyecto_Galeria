@@ -1,0 +1,339 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+*{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    background: #FFEFBA;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #FFFFFF, #FFEFBA);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #FFFFFF, #FFEFBA); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+}
+
+.form{
+    background-color: #000000;
+    color: white;
+    width: 90%;
+    margin: auto;
+    max-width: 350px;
+    border-radius: 1em;
+    padding: 3.5em 1.5em;
+    margin-top: 10%;
+
+}
+
+.form_container{
+    width: 100%;
+    display: grid;
+    gap: 1em;
+    grid-auto-columns: 100%;
+}
+
+.form_title{
+    text-align: center;
+    font-size: 1.9rem;
+    margin-top: .4em;
+}
+
+.form_input{
+    font-family: inherit;
+    font-size: small;
+    padding: .8em 1em;
+    outline: none;
+    border: none;
+    border: 1px solid #bbb0b0;
+    border-radius: 0.2em;
+}
+
+.form_input--message{
+    resize: none;
+    padding: 1.8em 1em;
+    margin-bottom: .5em;
+
+}
+
+.form_cta{
+    background-color: #089fe0;
+    color: #fff;
+    border: none;
+    font-weight: 300;
+    padding: .7em 0;
+    border-radius: .2em;
+    cursor: pointer;
+    font-weight: 400;
+}
+
+
+.topnav{
+    overflow: hidden;
+    background-color: white;
+    font-size: small;
+    justify-content: space-between;
+    display: flex;
+    position: fixed; /*  */
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+    
+
+   
+}
+
+.topnav a{
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.topnav a:hover{
+ background-color: black;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+/*Contenedor Navegacion*/
+#contenedor{
+    width: 1017px;
+    margin: 0 auto;
+}  
+
+
+@media (max-width:1201px){
+  .form{
+    margin-top: 8%;
+  }
+  .col-md-4{
+    flex: 0 0 50%;
+    width: 88%;
+}
+}
+
+@media only screen  and (min-width: 1025px) and (max-width: 1200px){
+  .form{
+    margin-top: 5%;
+  }
+  .col-md-4{
+    flex: 0 0 50%;
+    width: 81%;
+}
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .form{
+    margin-top: 8%;
+  }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  .form{
+    margin-top: 10%;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .form{
+    margin-top: 10%;
+  }
+}
+
+
+
+
+
+/*footer{
+    clear: both;
+    background-color: #ffe8d6;
+   margin-top: 5%;
+}  
+
+
+footer h1{
+    text-align: center;
+    font-size: 1.4em;
+    color: rgb(12, 11, 11);
+    padding: 0.7em;
+    font-family: 'Roboto', sans-serif;
+} */
+/*
+footer h2{
+    text-align: center;
+    font-size: 1em;
+    padding: 0.4em;
+    color: rgb(0, 0, 0);
+    font-family: 'Roboto', sans-serif;
+}
+
+footer a{
+    text-decoration: none;
+    color: rgb(5, 0, 0);
+}
+ 
+
+.contenedor{
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.row{
+    display: flex;
+    flex-wrap:wrap ;
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+
+.col-md-4{
+    flex: 0 0 50%;
+    max-width: 50%;
+    text-align: center;
+}
+
+h3{
+    margin-bottom: 15px;
+    color: #000000;
+    padding: 0.6em;
+}
+
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+li{
+    margin-bottom: 10px;
+}
+
+.social-icons li{
+    display: inline-block;
+    margin-right: 10px;
+  
+}
+
+.social-icons li a{
+    font-size: 30px;
+}
+*/
+
+/* Estilos para el pie de página */
+
+footer {
+    background-color: #fddbdb;
+    color: #000000;
+    text-align: center;
+    padding: 10px;
+    font-size: medium;
+    margin-top: 5%;
+  }
+  
+  footer p {
+    margin: 0;
+  }
+  
+  .social-icons li {
+    display: inline-block;
+    margin: 80px;
+    text-align: center;
+  }
+  
+  .social-icons li a {
+    color: #fff;
+    text-align: center;
+    font-size: 24px;
+  }
+  
+  .social-icons li a:hover {
+    color: #ddd;
+    text-align: center;
+  }
+  
+  /* Alineación del contenido en el pie de página */
+  .footerpiedepagina {
+    display: flex;
+    flex-direction: rigth;
+    justify-content: center;
+    align-items: center;
+    background-color: #171717;
+    padding: 15px 0px;
+    color: #f0aaaa;
+  
+  }
+  
+  /* Estilos para los íconos de redes sociales */
+  .social-icons li {
+    display: inline-block;
+    margin-right: 60px;
+  }
+  
+  .social-icons li a {
+    display: inline-block;
+    background-color: #fff;
+    color: #000;
+    border-radius: 5%;
+    text-align: center;
+    width: 80px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 20px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .social-icons li a:hover {
+    transform: translateY(-5px);
+  }
+  
+  .social-icons li a i {
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .social-icons li a:hover i {
+    color: #fff;
+  }
+  
+  footer {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .social-icons li {
+    margin: 0 20px;
+  }
+
+
+@media screen and (max-width: 1201px){
+    .col-md-4{
+        flex: 0 0 50%;
+        min-width: 98%;
+   
+    }
+    
+}
+
+@media screen and (max-width: 769px){
+    .col-md-4{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+   
+   
+} 

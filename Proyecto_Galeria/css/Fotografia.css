@@ -1,0 +1,386 @@
+*{
+    box-sizing: border-box;
+}
+
+.header{
+    text-align: center;
+    color: #a663cc;
+}
+
+.centro{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+.galeria{
+    width: 33%; 
+    padding-right: 5px;
+    display: inline-block;
+    min-height: 50vh;
+    border-radius: 20px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.06);
+    font-size: small;
+}
+
+.galeria img{
+    cursor: pointer;
+    transition: 1s;
+}
+
+.galeria img:hover{
+    transform: scale(1.2);
+}
+.galeria:hover{
+    border: 1px solid #ffb4a2;
+}
+.pie{
+    text-align: center;
+    padding: 10px;
+}
+
+body {
+    background-image: linear-gradient(to top, #ecedee 0%, #eceeef 75%, #e7e8e9 100%);
+    min-height: 100vh;
+    font: normal 16px sans-serif;
+    padding: 60px 0;
+    background: #FFEFBA;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #FFFFFF, #FFEFBA);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #FFFFFF, #FFEFBA); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.row::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+img{
+    width: 100%;
+    border-radius: 50%;
+}
+
+.topnav{
+    overflow: hidden;
+    background-color: white;
+    font-size: small;
+    justify-content: space-between;
+    display: flex;
+    position: fixed; /*  */
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+    
+
+   
+}
+
+.topnav a{
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.topnav a:hover{
+ background-color: black;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+/*Contenedor Navegacion*/
+#contenedor{
+    width: 1017px;
+    margin: 0 auto;
+}  
+
+
+@media screen and (max-width:1201px){
+    
+    .topnav a{
+        float: none;
+        width: 100%;
+    }
+
+    #contenedor{
+        width: 75%;
+    }
+    img{
+        width: 100%;
+    }
+    .col-md-4{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+   
+}
+
+@media only screen  and (min-width: 1025px) and (max-width: 1200px){
+    .topnav a{
+        float: none;
+        width: 100%;
+    }
+
+    #contenedor{
+        width: 100%;
+    }
+
+
+    img{
+        width: 100%;
+    }
+    .col-md-4{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px){
+    .topnav a{
+        float: none;
+        width: 100%;
+    }
+
+    #contenedor{
+        width: 100%;
+    }
+
+    img{
+        width: 100%;
+    }
+
+    .col-md-4{
+        flex: 0 0 50%;
+        max-width: 100%;
+    }
+
+    .galeria{
+        width: 32%;
+    }
+    
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px){
+    .galeria{
+        width: 100%;
+    }
+   
+    .col-md-4{
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    .topnav a{
+       overflow: hidden;
+        background-color: white;
+        font-size: small;
+        justify-content: space-between;
+        display: flex;
+        flex-direction: row;
+        
+    }
+    
+    .topnav{
+        overflow: hidden;
+        background-color: white;
+        font-size: small;
+        justify-content: space-between;
+        display: contents;
+        
+    }
+   
+    .topnav a{
+        float: left;
+        display: block;
+        color: black;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    
+    } 
+    
+    
+} 
+
+@media only screen and (min-width: 320px) and (max-width: 480px){
+    .galeria{
+        width: 100%;
+    }
+    .col-md-4{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .topnav a{
+        overflow: hidden;
+        background-color: white;
+        font-size: small;
+        justify-content: space-between;
+        display: flex;
+        flex-direction: row;
+        
+    }
+    
+    .topnav{
+        overflow: hidden;
+        background-color: white;
+        font-size: small;
+        justify-content: space-between;
+        display: contents;
+        
+    }
+   
+    .topnav a{
+        float: left;
+        display: block;
+        color: black;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    
+    } 
+
+    footer{
+        clear: both;
+        background-color: #cdb4db;
+     
+    }
+
+    footer h1{
+        text-align: center;
+        font-size: 1.4em;
+        color: rgb(12, 11, 11);
+        padding: 0.7em;
+    }
+    
+    footer h2{
+        text-align: center;
+        font-size: 1.4em;
+        padding: 0.1em;
+        color: rgb(0, 0, 0);
+    }
+    
+    footer a{
+        text-decoration: none;
+        color: rgb(5, 0, 0);
+    }
+} 
+
+/* Estilos para el pie de página */
+.col-md-4{
+    width: 81%;
+}
+footer {
+    background-color: #fddbdb;
+    color: #000000;
+    text-align: center;
+    padding: 10px;
+    font-size: medium;
+    margin-top: 5%;
+  }
+  
+  footer p {
+    margin: 0;
+  }
+  
+  .social-icons li {
+    display: inline-block;
+    margin: 80px;
+    text-align: center;
+  }
+  
+  .social-icons li a {
+    color: #fff;
+    text-align: center;
+    font-size: 24px;
+  }
+  
+  .social-icons li a:hover {
+    color: #ddd;
+    text-align: center;
+  }
+  
+  /* Alineación del contenido en el pie de página */
+  .footerpiedepagina {
+    display: flex;
+    flex-direction: rigth;
+    justify-content: center;
+    align-items: center;
+    background-color: #171717;
+    padding: 15px 0px;
+    color: #f0aaaa;
+  
+  }
+  
+  /* Estilos para los íconos de redes sociales */
+  .social-icons li {
+    display: inline-block;
+    margin-right: 60px;
+  }
+  
+  .social-icons li a {
+    display: inline-block;
+    background-color: #fff;
+    color: #000;
+    border-radius: 5%;
+    text-align: center;
+    width: 80px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 20px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .social-icons li a:hover {
+    transform: translateY(-5px);
+  }
+  
+  .social-icons li a i {
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .social-icons li a:hover i {
+    color: #fff;
+  }
+  
+  footer {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .social-icons li {
+    margin: 0 20px;
+  }
+  
+  
+  
+  
+
+@media screen and (max-width: 1201px){
+    .col-md-4{
+        max-width: 81%;
+   
+    }
+    
+}
+
+@media screen and (max-width: 769px){
+    .col-md-4{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+   
+   
+} 
+

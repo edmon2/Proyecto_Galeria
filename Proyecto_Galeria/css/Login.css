@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&display=swap');
+:root {
+   --font-style: 'Nunito Sans', sans-serif;
+}
+
+* {
+   box-sizing: border-box;
+}
+
+*{
+   font-family: 'Roboto', sans-serif;
+}
+
+body {
+
+   font-family: var(--font-style);
+   background: #FFEFBA;  /* fallback for old browsers */
+   background: -webkit-linear-gradient(to right, #FFFFFF, #FFEFBA);  /* Chrome 10-25, Safari 5.1-6 */
+   background: linear-gradient(to right, #FFFFFF, #FFEFBA); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+
+.topnav{
+   overflow: hidden;
+   background-color: white;
+   font-size: small;
+   justify-content: space-between;
+   display: flex;
+   position: fixed; /*  */
+ top: 0;
+ left: 0;
+ right: 0;
+ z-index: 1;
+   
+
+  
+}
+
+.topnav a{
+   float: left;
+   display: block;
+   color: black;
+   text-align: center;
+   padding: 14px 16px;
+   text-decoration: none;
+}
+
+.topnav a:hover{
+background-color: black;
+   color: white;
+   font-family: 'Roboto', sans-serif;
+   
+}
+
+
+
+.login-box {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   width: 400px;
+   padding: 40px;
+   transform: translate(-50%, -50%);
+   background: #242026;
+   box-shadow: 0 15px 25px rgba(143, 124, 236, 0.7);
+   border-radius: 10px;
+}
+
+.login-box h2 {
+   margin: 0 0 30px;
+   padding: 0;
+   color: #fff;
+   text-align: center;
+}
+
+.login-box .user-box input {
+   position: relative;
+   width: 100%;
+   padding: 10px 0;
+   font-size: 16px;
+   color: #fff;
+   margin-bottom: 30px;
+   border: none;
+   border-bottom: 1px solid #fff;
+   outline: none;
+   background: transparent;
+}
+
+.login-box .user-box label {
+   position: relative;
+   left: 0;
+   top: -60px;
+   padding: 10px 0;
+   font-size: 16px;
+   color: #fff;
+   pointer-events: none;
+   transition: .5s;
+}
+
+.login-box .user-box input:focus~label,
+.login-box .user-box input:valid~label {
+   top: -85px;
+   left: 0;
+   color: #8F7CEC;
+   font-size: 12px;
+}
+
+#submit {
+   padding: 10px 20px;
+   color: #CBBDDB;
+   font-size: 16px;
+   text-decoration: none;
+   text-transform: uppercase;
+   overflow: hidden;
+   transition: .5s;
+   letter-spacing: 4px;
+   border: 1px solid #8F7CEC;
+   margin: auto;
+}
+
+#submit:hover {
+   background: #8F7CEC;
+   color: #fff;
+   border-radius: 5px;
+   box-shadow: 0 0 5px #8F7CEC, 0 0 25px #8F7CEC, 0 0 50px #8F7CEC, 0 0 100px #8F7CEC;
+}
+
+.button-form {
+   display: flex;
+   flex-direction: row;
+   margin-top: 20px;
+}
+
+#register {
+   font-size: 14px;
+   text-decoration: none;
+   color: #CBBDDB;
+   margin: auto;
+   width: 60%;
+   text-align: center;
+}
+
+#register a {
+   margin: auto;
+   color: #8F7CEC;
+   text-decoration: none;
+}
+.col-md-4{
+   width: 89%;
+}
+footer {
+   background-color: #fddbdb;
+   color: #000000;
+   text-align: center;
+   font-size: medium;
+   margin-top: 42%;
+   font-size: 1em;
+   padding: 0em;
+   
+
+ }
+ 
+ footer p {
+   margin: 0;
+   margin-top: 1%;
+ }
+ 
+ .social-icons li {
+   display: inline-block;
+   margin: 80px;
+   text-align: center;
+ }
+ 
+ .social-icons li a {
+   color: #fff;
+   text-align: center;
+   font-size: 24px;
+ }
+ 
+ .social-icons li a:hover {
+   color: #ddd;
+   text-align: center;
+ }
+ 
+ .col-12{
+   flex-direction: row;
+ }
+ /* Alineación del contenido en el pie de página */
+ .footerpiedepagina {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: #171717;
+   padding: 15px 0px;
+   color: #f0aaaa;
+ 
+ }
+ 
+ /* Estilos para los íconos de redes sociales */
+ .social-icons li {
+   display: inline-block;
+   margin-right: 60px;
+ }
+ 
+ .social-icons li a {
+   display: inline-block;
+   background-color: #fff;
+   color: #000;
+   border-radius: 5%;
+   text-align: center;
+   width: 80px;
+   height: 30px;
+   line-height: 30px;
+   font-size: 20px;
+   transition: all 0.3s ease-in-out;
+ }
+ 
+ .social-icons li a:hover {
+   transform: translateY(-5px);
+ }
+ 
+ .social-icons li a i {
+   transition: all 0.3s ease-in-out;
+ }
+ 
+ .social-icons li a:hover i {
+   color: #fff;
+ }
+ 
+ footer {
+   display: flex;
+   justify-content: center;
+ 
+ }
+ 
+ .social-icons {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+ 
+ .social-icons li {
+   margin: 0 20px;
+ }
+
+ 
+
+@media screen and (max-width: 1201px){
+   .col-md-4{
+       flex: 0 0 50%;
+       max-width: 89%;
+  
+   }
+  
+   
+}
+
+@media screen and (max-width: 769px){
+   .col-md-4{
+       flex: 0 0 100%;
+       max-width: 100%;
+   }
+  
+  
+}
+
+
+ 
